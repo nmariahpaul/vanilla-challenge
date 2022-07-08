@@ -53,6 +53,10 @@ li {
   font-size: 64px;
 }
 
+.float-left {
+  float: left;
+}
+
 .weather-temperature .units {
   position: relative;
   top: -34px;
