@@ -12,12 +12,43 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="container"></div>
-
+    <div class="container">
+      <div class="weather-wrapper">
+        <div class="overview">
+          <h1>Paris</h1>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li>Last updated:</li>
+                <li id="description">Description</li>
+                <li id="wind-speed">Wind:</li>
+                <li id="humidity">Humidity:</li>
+              </ul>
+            </div>
+            <div class="col-6" id="current-temperature">
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt="Sunny"
+              />
+              <strong>17°C</strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
