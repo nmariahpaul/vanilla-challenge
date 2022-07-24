@@ -2,6 +2,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#city-name {
+  font-size: 38px;
+  margin: 10px auto;
+}
+
 ul {
   list-style: none;
   margin-left: -30px;
