@@ -4,6 +4,8 @@ body {
 
 ul {
   list-style: none;
+  margin-left: -30px;
+  font-size: 14px;
 }
 
 .container {
@@ -19,7 +21,8 @@ ul {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
-
-.float-right {
-  float: right;
+.current-temperature {
+  position: relative;
+  top: 29px;
+  font-size: 34px;
 }
