@@ -2,6 +2,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.form-control {
+  border-color: #6c757d;
+}
+
 #city-name {
   font-size: 38px;
   margin: 10px auto;
@@ -10,7 +14,7 @@ body {
 ul {
   list-style: none;
   margin-left: -30px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .container {
@@ -26,8 +30,21 @@ ul {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
+
+#current-temp-icon {
+  height: 86px;
+}
+
 .current-temperature {
   position: relative;
-  top: 29px;
+  top: 17px;
   font-size: 34px;
+}
+
+#signature {
+  font-size: 12px;
+}
+
+#github-link {
+  text-decoration: none;
 }
