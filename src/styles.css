@@ -2,19 +2,25 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+ul {
+  list-style: none;
+  margin-left: -30px;
+
+  font-size: 13px;
+}
+
 .form-control {
   border-color: #6c757d;
 }
 
-#city-name {
+h1 {
   font-size: 38px;
-  margin: 10px auto;
+  line-height: 28px;
+  margin: 15px auto;
 }
 
-ul {
-  list-style: none;
-  margin-left: -30px;
-  font-size: 13px;
+#description::first-letter {
+  text-transform: uppercase;
 }
 
 .container {
@@ -39,6 +45,12 @@ ul {
   position: relative;
   top: 17px;
   font-size: 34px;
+}
+
+#unit {
+  position: relative;
+  top: 23px;
+  font-size: 16px;
 }
 
 #signature {
