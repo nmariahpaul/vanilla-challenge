@@ -1,3 +1,27 @@
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `Currently: ${day}, ${hour}:${minutes}`;
+}
+
 function displayTemperature(response) {
   console.log(response);
   let temperatureElement = document.querySelector("#temperature-element");
@@ -10,6 +34,8 @@ function displayTemperature(response) {
   humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = `${response.data.weather[0].description}`;
+  let lastUpdatedElement = document.querySelector("#updated-time");
+  lastUpdatedElement.innerHTML = formatDate(response.data.dt * 1000);
   let currentIconElement = document.querySelector("#current-temp-icon");
   currentIconElement.setAttribute(
     "src",
