@@ -38,13 +38,13 @@ h1 {
 }
 
 #current-temp-icon {
-  height: 86px;
+  height: 90px;
 }
 
 .current-temperature {
   position: relative;
-  top: 17px;
-  font-size: 34px;
+  top: 14px;
+  font-size: 40px;
 }
 
 #unit {
