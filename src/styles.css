@@ -9,14 +9,14 @@ ul {
   font-size: 13px;
 }
 
-.form-control {
-  border-color: #6c757d;
-}
-
 h1 {
   font-size: 38px;
   line-height: 28px;
   margin: 15px auto;
+}
+
+.form-control {
+  border-color: #6c757d;
 }
 
 #description::first-letter {
@@ -37,6 +37,10 @@ h1 {
   border-radius: 5px;
 }
 
+#current-description {
+  opacity: 0.7;
+}
+
 #current-temp-icon {
   height: 90px;
 }
@@ -51,6 +55,23 @@ h1 {
   position: relative;
   top: 23px;
   font-size: 16px;
+}
+
+#forecast-display {
+  text-align: center;
+}
+
+.weather-forecast-date {
+  opacity: 0.6;
+}
+
+.forecast-temperature {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.temperature-minimum {
+  opacity: 0.6;
 }
 
 #signature {
